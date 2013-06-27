@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="chantey.xsl"?>
+<!DOCTYPE chantey SYSTEM "chantey.dtd">
+<chantey>
+    <title></title>
+    <collection></collection>
+    <author>
+        <personid></personid>
+    </author>
+    <performer>
+        <personid></personid>
+    </performer>
+    <use>
+        <usetype></usetype>
+    </use>
+    <ID></ID>
+    <crossref>
+        <ID></ID>
+    </crossref>
+
+<text>
+</text>
+
+<abc>
+X:
+T:
+C:
+M: 4/4
+L: 1/8
+K:
+|]
+</abc>
+
+</chantey>
+

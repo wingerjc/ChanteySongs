@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="chantey.xsl"?>
+<!DOCTYPE chantey SYSTEM "chantey.dtd">
+<chantey>
+    <title>Blow, My Bully Boys, Blow.</title>
+    <collection>1883BNAVWMA</collection>
+    <author>
+        <personid>Trad</personid>
+    </author>
+    <use>
+        <usetype>long haul</usetype>
+    </use>
+    <ID>R000703</ID>
+
+<text>
+Oh, Sally Brown's a bright mulatto; _Blow,_ boys, _blow!_
+    Oh she drinks rum and chews tobacco, _Blow,_ my bully boys, _blow!_
+
+Oh, Sally Brown, I long to see you; _Blow,_ boys, _blow!_
+    Chorus, etc.
+
+Oh, Sally Brown, I'll ne'e deceiv you, _Blow,_ boys, _blow!_
+    Chorus, etc.
+</text>
+
+<abc>
+X: 703
+T: Blow, My Bully Boys, Blow
+C: Trad.
+M: 4/4
+L: 1/8
+K: C
+CD| E3 C E3 C | E2 E2 D C2 z | D4 E4 | F6 A2 |
+w: Oh,_ Sal-ly Brown's a bright mu-lat-to; Blow, boys, blow! Oh,
+G3 E F3 D | C2 D2 E F3 | E2 G2 DD E2 | HC6 |]
+w: she drinks rum and chews to-bac-co, Blow, my bul-ly boys, blow!
+</abc>
+
+</chantey>
+

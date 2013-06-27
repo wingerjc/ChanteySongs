@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="chantey.xsl"?>
+<!DOCTYPE chantey SYSTEM "chantey.dtd">
+<chantey>
+    <title>Johnny Boker</title>
+    <collection>1883BNAVWMA</collection>
+    <author>
+        <personid>Trad</personid>
+    </author>
+    <use>
+        <usetype>short haul</usetype>
+    </use>
+    <ID>R000353</ID>
+    <crossref>
+        <ID>R00097</ID
+    </crossref>
+
+<text>
+Oh! do, my Johnny Boker, come rock and roll me Over; Do, my Johnny Boker, _do._
+</text>
+
+<abc>
+X: 353
+T: Johnny Boker
+C: Trad.
+M: 2/4
+L: 1/8
+K: G
+D|G G G G|G2 F G|A G F G|EF G2|D D D D|E2 F2|G2 z]
+w: Oh! do, my John-ny Bo-ker, come rock and roll me O--ver; Do, my John-ny Bo-ker, do.
+</abc>
+
+</chantey>
+

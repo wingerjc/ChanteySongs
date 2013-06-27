@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="chantey.xsl"?>
+<!DOCTYPE chantey SYSTEM "chantey.dtd">
+<chantey>
+    <title>My Tommy's Gone A High-Low.</title>
+    <collection>1883BNAVWMA</collection>
+    <author>
+        <personid>Trad</personid>
+    </author>
+    <use>
+        <usetype>long haul</usetype>
+    </use>
+    <ID>R000481</ID>
+    <crossref>
+        <ID>R000650</ID>
+    </crossref>
+
+<text>
+My Tommy's gone and I'll go too, _Hurrah!_ you high-low; 
+    For without Tommy I can't do, My _Tommy's_ gone a _high-low._
+
+My Tommy's gone on the eastern shore,
+    Chorus.
+
+My Tommy's gone to Balimore,
+    Chorus.
+</text>
+
+<abc>
+X: 481
+T: My Tommy's Gone A High-Low
+C: Trad.
+M: 3/4
+L: 1/8
+K: G
+D D E | G3 B A E | (G4 G) B | (A4 A) G | B (A E3) A | 
+w: My Tom-my's gone and I'll go too,_ Hur-rah!_ you high-low;_ For 
+A A A3 F | G E D3 D | G G B3 G | A G2 |]
+w: with-out Tom-my I can't do, My Tom-my's gone a high-low.
+</abc>
+
+</chantey>
+

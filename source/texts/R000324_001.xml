@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="chantey.xsl"?>
+<!DOCTYPE chantey SYSTEM "chantey.dtd">
+<chantey>
+    <title>Shanadore</title>
+    <collection>1883BNAVWMA</collection>
+    <author>
+        <personid>Trad</personid>
+    </author>
+    <use>
+        <usetype>long haul</usetype>
+    </use>
+    <ID>R000324</ID>
+    <crossref>
+        <ID>R004150</ID>
+        <ID>R007989</ID>
+        <ID>R017379</ID>
+    </crossref>
+
+<text>
+Shanadore's a rolling river, _Hurrah!_ you rolling river,
+    Oh, Shanadore's a rolling river, _Ah Hah!_ I'm bound away, O'er the wild Missouri.
+
+Shanadore's a packet sailor,
+    Chorus.
+
+Shanadore's a bright mulatto,
+    Chorus.
+
+Shanadore, I long to hear you,
+    Chorus
+</text>
+
+<abc>
+X: 324
+T: Shanadore
+C: Trad.
+M: 3/4
+L: 1/8
+K: C
+C C | C3 D E F | G E2 z2 c | A3 G A G | E G2 z2 G | A A A3 E |
+w: Shan-a-dore's a roll-ing riv-er, Hur-rah! you roll-ing riv-er, Oh, Shan-a-dore's a
+G E D C z E | E3 C E F | G3 z C D | (E E3) D | D C3 |]
+w: roll-ing riv-er, Ah Hah! I'm bound a-way, O'er the wild_ Mis-sou-ri.
+</abc>
+
+</chantey>
+

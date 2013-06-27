@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="chantey.xsl"?>
+<!DOCTYPE chantey SYSTEM "chantey.dtd">
+<chantey>
+    <title>Haul the Bowline</title>
+    <collection>1883BNAVWMA</collection>
+    <author>
+        <personid>Trad</personid>
+    </author>
+    <use>
+        <usetype>short haul</usetype>
+    </use>
+    <ID>R000652</ID>
+
+<text>
+Haul the bowline, Kitty is my darling;
+    Haul the bowline, the bowline, _haul!_
+
+Haul the bowline, the clipper ship's a rolling;
+    Haul the bowline, the bowline, _haul!_
+
+Haul the bowline, our bully mate is growling;
+    Haul the bowline, the bowline, _haul!_
+</text>
+
+<abc>
+X: 652
+T: Haul the Bowline
+C: Trad.
+M: 4/4
+L: 1/8
+K: G
+G3 G F2 D2|E F G E DC B,2|G3 G F2 D D|E2 F2 G4|]
+w: Haul the bow-line, Kit-ty is my Dar--ling; Haul the bow-line, the bow-line, haul! 
+</abc>
+
+</chantey>
+

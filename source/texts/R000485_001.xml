@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="chantey.xsl"?>
+<!DOCTYPE chantey SYSTEM "chantey.dtd">
+<chantey>
+    <title>John Francois</title>
+    <collection>1883BNAVWMA</collection>
+    <author>
+        <personid>Trad</personid>
+    </author>
+    <use>
+        <usetype>long haul</usetype>
+    </use>
+    <ID>R000485</ID>
+    <crossref>
+        <ID>R000349</ID>
+        <ID>R000577</ID>
+        <ID>R013288</ID>
+        <ID>R019751</ID>
+    </crossref>
+
+<text>
+Oh, Boney was a warrior, _Away,_ hey way!
+    Oh, Boney was a warrior, _John Francois._
+% it is noted that Francois is pronounced "Franswar"
+
+Oh, Boney went to Roo-shy,
+    Chorus.
+
+Oh, Boney went to Proo-shy,
+    Chorus.
+
+He crossed the Rock Mountains,
+    Chorus.
+
+He made a mistake at Waterloo,
+    Chorus.
+
+He died at Saint Helena,
+    Chorus.
+</text>
+
+<abc>
+X: 485
+T: John Francois
+C: Trad.
+M: 6/8
+L: 1/8
+K: C
+CD | E2 D E2 D | C3 C2 E | G3 A3 | HF3 z E |
+w: Oh,_ Bo-ney was a warri-or, A-way, hey way! Oh,
+D2 D D2 C| B,3 A3 | G3 G3 | (E3 E) ]
+w:  Bo-ney was a warri-or, John Fran-cois.
+</abc>
+
+</chantey>
+

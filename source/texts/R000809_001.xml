@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="chantey.xsl"?>
+<!DOCTYPE chantey SYSTEM "chantey.dtd">
+<chantey>
+    <title>Haul Away Joe</title>
+    <collection>1883BNAVWMA</collection>
+    <author>
+        <personid>Trad</personid>
+    </author>
+    <use>
+        <usetype>short haul</usetype>
+    </use>
+    <ID>R000809</ID>
+
+<text>
+Way, haul away; O, haul away my Rosey. Way, haul away; O, haul away _Joe._
+</text>
+
+<abc>
+X: 809
+T: Haul Away Joe
+C: Trad.
+M: 4/4
+L: 1/8
+K: Eb
+B2 B3/2 A/ F3 D|E E E E FG AF|B2 B3/2 A/ F3 D|E E F2 B,4|]
+w: Way, haul a-way; O, haul a-way my ro--sey._ Way, haul a-way; O, haul a-way Joe.
+</abc>
+
+</chantey>
+

@@ -1,0 +1,41 @@
+title:
+The recorded title of the song
+
+collection:
+The collection ID
+
+author:
+The Author ID, if more than one separate with commas.
+
+performer:
+The performer ID, if more than one, separate with commas.
+
+use:
+how the song was used (if provided) general categories are
+    bunting (e.g. paddy doyle's boots)
+    short haul (e.g haul on the bowline)
+    long haul/halyard
+    capstan/pumping/windlass
+    fo'c'sle
+    
+
+ID:
+The id of the song. If the song has a Roud number, use R and then a 6 digit
+number padding the left with zeroes. Otherwise, assign a number using the first
+letter of the last name of the author/collector/publisher of the work and
+follow that with a 6 digit number, increment by 1 the highest number of all IDs
+starting with the required character.
+e.g. R001234, C000001
+
+crossref:
+ID numbers of possibly similar or equivalent songs.
+
+#text
+    Text of song. full line comments are acceptable if prefixed with %.
+#text
+
+#abc
+    ABC formatted melody. The key should generally be the relative major of the
+    signature.
+#abc
+

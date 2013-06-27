@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="chantey.xsl"?>
+<!DOCTYPE chantey SYSTEM "chantey.dtd">
+<chantey>
+    <title>Reuben Ranzo</title>
+    <collection>1883BNAVWMA</collection>
+    <author>
+        <personid>Trad</personid>
+    </author>
+    <use>
+        <usetype>long haul</usetype>
+    </use>
+    <ID>R003282</ID>
+    <crossref>
+        <ID>R000327</ID>
+        <ID>R000328</ID>
+        <ID>R002624</ID>
+        <ID>R002626</ID>
+    </crossref>
+
+<text>
+Oh, poor Reuben Ranzo, _Ranzo,_ boys, _Ranzo!_
+    Oh, poor Reuben Ranzo, _Ranzo,_ boys, _Ranzo!_
+
+Oh, Reuben was no sailor, _Ranzo,_ boys, _Ranzo!_
+    Oh, Reuben was no sailor, _Ranzo,_ boys, _Ranzo!_
+
+He shipped on board of a whaler, _Ranzo,_ boys, _Ranzo!_
+    He shipped on board of a whaler, _Ranzo,_ boys, _Ranzo!_
+
+The captain was a bad man, _Ranzo,_ boys, _Ranzo!_
+    The captain was a bad man, _Ranzo,_ boys, _Ranzo!_
+
+He put him in the rigging, _Ranzo,_ boys, _Ranzo!_
+    He put him in the rigging, _Ranzo,_ boys, _Ranzo!_
+
+He gave him six and thirty, _Ranzo,_ boys, _Ranzo!_
+    He gave him six and thirty, _Ranzo,_ boys, _Ranzo!_
+
+Oh I poor Reuben Ranzo, _Ranzo,_ boys, _Ranzo!_
+    Oh Ipoor Reuben Ranzo, _Ranzo,_ boys, _Ranzo!_
+</text>
+
+<abc>
+X: 3282
+T: Reuben Ranzo
+C: Trad.
+M: 4/4
+L: 1/4
+K: F
+A c B A| G2 A2|G G G2| A (G2 C) |F2 F D| F2 C2|F A A2| G F2 z|]
+w: Oh, poor Reu-ben Ran-zo, Ran-zo, boys, Ran-zo! Oh, poor Reu-ben Ran-zo, Ran-zo, boys, Ran-zo
+</abc>
+
+</chantey>
+
