@@ -1,3 +1,5 @@
 
 # ingore backups from JEdit/Emacs
 *~
+# ignore java class files, allows to build in source directory.
+*.class
