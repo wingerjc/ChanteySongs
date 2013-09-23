@@ -16,7 +16,8 @@ public class test
         xstream.alias("Person",Person.class);
         
         //testPerson(xstream);
-        testIndex(xstream);
+        //testIndex(xstream);
+        testCollection(xstream);
     }
     
     public static void testPerson(XStream xstream)
@@ -39,5 +40,16 @@ public class test
         System.out.println(xstream.toXML(i));
         
         System.out.println("\n" + i);
+    }
+    
+    public static void testCollection(XStream xstream)
+    {
+        ChanteySongs.Data.Collection c = new ChanteySongs.Data.Collection();
+        c.read(new Scanner(System.in), new PrintWriter(System.out, true));
+        c.computeID();
+        
+        System.out.println(xstream.toXML(c));
+        
+        System.out.println("\n" + c);
     }
 }

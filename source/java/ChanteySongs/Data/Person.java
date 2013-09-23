@@ -2,7 +2,6 @@ package ChanteySongs.Data;
 
 import java.io.*;
 import java.util.*;
-import java.text.*;
 
 
 public class Person implements Serializable, CLIInput
@@ -33,57 +32,19 @@ public class Person implements Serializable, CLIInput
     /** read in from the command line */
     public void read(Scanner in, PrintWriter out)
     {
-        SimpleDateFormat formatter = new SimpleDateFormat("MM/dd/yyyy");
-        String tmp = "";
+        firstName = DataUtil.getData(in,out,"First name");
         
-        out.print("First Name: ");
-        out.flush();
-        tmp = in.nextLine();
-        firstName = tmp.length() == 0 ? null : tmp;
+        middleName = DataUtil.getData(in,out,"Middle name");
         
-        out.print("Middle Name: ");
-        out.flush();
-        tmp = in.nextLine();
-        middleName = tmp.length() == 0 ? null : tmp;
+        lastName = DataUtil.getData(in,out,"Last name");
         
-        out.print("Last Name: ");
-        out.flush();
-        tmp = in.nextLine();
-        lastName = tmp.length() == 0 ? null : tmp;
+        title = DataUtil.getData(in,out,"Title");
         
-        out.print("Title: ");
-        out.flush();
-        tmp = in.nextLine();
-        title = tmp.length() == 0 ? null : tmp;
+        suffix = DataUtil.getData(in,out,"Suffix");
         
-        out.print("Suffix: ");
-        out.flush();
-        tmp = in.nextLine();
-        suffix = tmp.length() == 0 ? null : tmp;
+        born = DataUtil.getDataDate(in,out,"Date of birth");
         
-        try
-        {
-            out.print("Date of Birth: ");
-            out.flush();
-            tmp = in.nextLine();
-            born = tmp.length() == 0 ? null : formatter.parse(tmp);
-        }catch(ParseException pe)
-        {
-            System.err.println("Could not parse Birth Date: " + tmp);
-            born = null;
-        }
-        
-        try
-        {
-            out.print("Date of Death: ");
-            out.flush();
-            tmp = in.nextLine();
-            died = tmp.length() == 0 ? null : formatter.parse(tmp);
-        }catch(ParseException pe)
-        {
-            System.err.println("Could not parse Death Date: " + tmp);
-            born = null;
-        }
+        died = DataUtil.getDataDate(in,out,"Date of death");
     }
     
 // ------------------- ACCESSORS -------------------------
@@ -113,7 +74,6 @@ public class Person implements Serializable, CLIInput
     
     public String toString()
     {
-        SimpleDateFormat formatter = new SimpleDateFormat("MM/dd/yyyy");
         return ID + ":" +
             ((title == null)? "" : (" " + title)) +
             (( firstName == null)? "" : (" " + firstName)) +
@@ -121,9 +81,9 @@ public class Person implements Serializable, CLIInput
             (( lastName == null)? "" : (" " + lastName)) +
             (( suffix == null)? "" : (" " + suffix)) +
             " (B: " +
-            (( born == null)? "?" : formatter.format(born)) +
+            (( born == null)? "?" : DataUtil.formatter.format(born)) +
             " D: " + 
-            (( died == null)? "?" : formatter.format(died)) +
+            (( died == null)? "?" : DataUtil.formatter.format(died)) +
             ")";
     }
 // ------------------- MUTATORS -------------------------

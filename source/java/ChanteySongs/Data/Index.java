@@ -28,41 +28,11 @@ public class Index implements CLIInput
     
     public void read(Scanner in, PrintWriter out)
     {
-        String tmp;
-        Set<String> tmpSet;
+        ID = DataUtil.getData(in,out,"ID");
         
-        out.print("ID: ");
-        out.flush();
-        tmp = in.nextLine();
-        ID = (tmp.length() == 0 ? null : tmp);
+        seeAlso = DataUtil.getDataSet(in,out,"See also");
         
-        tmpSet = new HashSet<String>();
-        do
-        {
-            out.print("See also: ");
-            out.flush();
-            tmp = in.nextLine();
-            if(tmp.length() > 0 && !tmpSet.contains(tmp))
-            {
-                tmpSet.add(tmp);
-            }
-        }while(tmp.length() > 0);
-        
-        seeAlso = (tmpSet.size() == 0? null : tmpSet);
-        
-        tmpSet = new HashSet<String>();
-        do
-        {
-            out.print("Cross Reference: ");
-            out.flush();
-            tmp = in.nextLine();
-            if(tmp.length() > 0 && !tmpSet.contains(tmp))
-            {
-                tmpSet.add(tmp);
-            }
-        }while(tmp.length() > 0);
-        
-        crossRef = (tmpSet.size() == 0? null : tmpSet);
+        crossRef = DataUtil.getDataSet(in,out,"Cross Reference");
     }
     
 // ------------------------- ACCESSORS -----------------------
