@@ -3,7 +3,8 @@
 <!DOCTYPE chantey SYSTEM "chantey.dtd">
 <chantey>
     <title>On the Banks of Sacramento</title>
-    <collection>1894BMARCOM</collection>
+    <collection>1894BMORCOM</collection>
+    <location>61</location>
     <author>
         <personid>Trad</personid>
     </author>

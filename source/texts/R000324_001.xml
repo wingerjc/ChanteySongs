@@ -4,6 +4,7 @@
 <chantey>
     <title>Shanadore</title>
     <collection>1883BNAVWMA</collection>
+    <location>5</location>
     <author>
         <personid>Trad</personid>
     </author>
@@ -11,11 +12,6 @@
         <usetype>long haul</usetype>
     </use>
     <ID>R000324</ID>
-    <crossref>
-        <ID>R004150</ID>
-        <ID>R007989</ID>
-        <ID>R017379</ID>
-    </crossref>
 
 <text>
 Shanadore's a rolling river, _Hurrah!_ you rolling river,

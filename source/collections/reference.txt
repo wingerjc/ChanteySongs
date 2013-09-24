@@ -1,0 +1,47 @@
+title:
+Book or collection title. If there is no official title for the work,
+
+
+year:
+Use
+Year published 
+
+location:
+Location of recording if available, otherwise the location of the publisher.
+
+publisher:
+The name of the publishing company.
+
+author:
+The ID of the author or recorder, if more than one person worked on a collection
+separate IDs with commas.
+
+format:
+Can be 'book' 'recording' 'broadside'
+
+length:
+Length in pages of book (highest numbered page of work)
+If a collection of audio recordings, the number of recordings in the collection.
+
+id:
+11 character identifier
+4 chars | the year published/recorded
+          if unknown, put 0000
+1 char  | B/Book R/Recording S/Broadside T/title
+3 chars | first 3 characters of the title
+          if unknown, put DNE
+3 chars | first 3 characters of primary author's/collector's last name or
+          the first 3 letters of the publishing company.
+          if unknown, put DNE
+
+
+
+title:
+year:
+location:
+author:
+publisher:
+format:
+length:
+id:
+

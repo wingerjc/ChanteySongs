@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="chantey.xsl"?>
+<!DOCTYPE chantey SYSTEM "chantey.dtd">
+<chantey>
+    <title>Paddy, Come Work On the Railway</title>
+    <collection>1883BNAVWMA</collection>
+    <location>6</location>
+    <author>
+        <personid>Trad</personid>
+    </author>
+    <use>
+        <usetype>capstan</usetype>
+    </use>
+    <ID>R000208</ID>
+
+<text>
+In eighteen hundred and sixty three, I came across the stormy sea, My
+dung'ree breeches I put on, To work upon the railway, the railway, To
+work upon the railway, Oh, poor Paddy, come work on the railway.
+</text>
+
+<abc>
+X: 208
+T: Paddy, Come Work On the Railway
+C: Trad.
+M: 6/8
+L: 1/8
+K: C
+C | E2 E E D C | E2 F G2 E | C2 C F2 E | D2 B, G,2 G/F/ |
+w: In eight-een hun-dred and sixt-y three, I came a-cross the storm-y sea, My_
+E2 E ED C | E2 F G2 F | E2 C D2 B, |  (C2 E) D2 C | (B,2 A,) G,2 G, |
+w: dung'-ree breech--es I put on, To work up-on the rail--way, the rail--way, To
+C2 D E2 F | (G2 A) (HGC) HG/ F/ | E D C D C B, | C3 C2 z |]
+w: work up-on the rail--way,_ Oh, poor Pad-dy, come work on the rail-way.
+</abc>
+
+</chantey>
+

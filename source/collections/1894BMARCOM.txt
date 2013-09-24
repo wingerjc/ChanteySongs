@@ -1,0 +1,7 @@
+title: More Maritime Melodies
+year: 1894
+location: San Francisco
+publisher: Commercial publishing Company
+format: book
+length: 79
+id: 1894BMORCOM

@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="chantey.xsl"?>
+<!DOCTYPE chantey SYSTEM "chantey.dtd">
+<chantey>
+    <title>Whiskey Johnny</title>
+    <collection>1883BNAVWMA</collection>
+    <location>5</location>
+    <author>
+        <personid>Trad</personid>
+    </author>
+    <use>
+        <usetype>long haul</usetype>
+    </use>
+    <ID>R000651</ID>
+
+<text>
+Whiskey is the life of man.
+    _Whiskey_ Johnny,
+We'll drink our whiskey when we can:
+    _Whiskey_ for my Johnny.
+
+I drink whiskey, and my wife drinks gin,
+    Chorus.
+And the way she drinks it is a sin,
+    Chorus.
+
+I and my wife cannot agree,
+    Chorus.
+For she drinks whiskey in her tea,
+    Chorus.
+
+I had a girl her name was Lize,
+    Chorus.
+She put whiskey in her pies,
+    Chorus.
+
+Whiskey's gone and I'll go too,
+    Chorus.
+For without whiskey I can't do,
+    Chorus.
+</text>
+
+<abc>
+X: 651
+T: Whiskey Johnny
+C: Trad.
+M: 4/4
+L: 1/4
+K: C
+ C E E > D | D C C2 | C E2 z | C E2 G |
+w: Whis-key is the life of man. Whis-key John-ny, We'll
+ G E F E | D D G,2 | B, D F > E | E C2 z |]
+w: drink our whis-key when we can: Whis-key for my John-ny.
+
+</abc>
+
+</chantey>
+

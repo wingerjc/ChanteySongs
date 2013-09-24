@@ -1,0 +1,4 @@
+<!ELEMENT index (ID,crossref?) >
+<!ELEMENT ID (CDATA) >
+<!ELEMENT crossref (ID+) >
+

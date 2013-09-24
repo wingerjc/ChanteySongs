@@ -1,0 +1,34 @@
+first:
+First name
+
+middle:
+Middle name or initial
+
+last:
+Surname
+
+born:
+Year of birth. If no record can be found, use the date of publication/recording
+followed by an X.
+e.g. 1894X
+
+died:
+Year of death
+
+nationality:
+Nation of primary citizenship
+
+ID:
+last name followed by initials of first and middle names, then year of birth.
+See 'born' tag for birth year formatting.
+
+first:
+middle:
+last:
+born:
+died:
+nationality:
+ID:
+
+
+

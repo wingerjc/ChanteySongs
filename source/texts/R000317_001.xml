@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="chantey.xsl"?>
+<!DOCTYPE chantey SYSTEM "chantey.dtd">
+<chantey>
+    <title>Rio Grande</title>
+    <collection>1883BNAVMWA</collection>
+    <location>6</location>
+    <author>
+        <personid>Trad</personid>
+    </author>
+    <use>
+        <usetype>capstan</usetype>
+    </use>
+    <ID>R000317</ID>
+
+<text>
+I'm bound away this very day, Oh, you Rio!
+    I'm bound away this very day, I'm bound for the Rio Grande.
+And away you Rio! Oh, you Rio,
+    I'm bound away this very day, I'm bound for the Rio Grande.
+</text>
+
+<abc>
+X: 317
+T: Rio Grande
+C: Trad.
+M: 6/8
+L: 1/8
+K: C
+CD | E2 E E2 D | C(D E) DC z | (G3 G2) E | A G2 z2 G | 
+w: I'm_ bound a-way this ver--y day,_ Oh,_ you Ri-o! I'm
+A2 A GF E | FG F ED C | E3/2 E/ E D2 G | C3 C C3/2 D/ | (E3 E2) C | D C2 z z2 |
+w: bound a-way_ this ver--y day,_ I'm bound for the Ri-o Gran-de. And a-way_ you Ri-o!
+(G3 G2) E | A G2 z2 G | A2 A GF E | FG F ED C | E E E D2 G | C3 C z2 |]
+w: Oh,_ you Ri-o, I'm bound a-way_ this ver--y day,_ I'm bound for the Ri-o Gran-de.
+</abc>
+
+</chantey>
+

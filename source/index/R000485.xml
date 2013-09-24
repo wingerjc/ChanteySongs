@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="index.xsl"?>
+<!DOCTYPE chantey SYSTEM "index.dtd">
+<index>
+    <ID>R000485</ID>
+    <crossref>
+        <ID>R000349</ID>
+        <ID>R000577</ID>
+        <ID>R013288</ID>
+        <ID>R019751</ID>
+    </crossref>
+</index>
+

@@ -70,7 +70,11 @@ public class DataUtil
         return ret;
     }
     
-    public static void prepare(XStream xstream, Object o)
+    public static void prepare(XStream xstream)
     {
+        xstream.alias("Person", Person.class);
+        xstream.alias("Index", Index.class);
+        xstream.alias("Collection", Collection.class);
+        xstream.alias("Song", Song.class);
     }
 }

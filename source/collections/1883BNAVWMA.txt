@@ -1,0 +1,8 @@
+title: Naval Songs
+year: 1883
+location: New York
+publisher: Wm. A. Pond Co.
+format: book
+length: 130
+id: 1883BNAVWMA
+

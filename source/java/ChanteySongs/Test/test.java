@@ -44,7 +44,7 @@ public class test
     
     public static void testCollection(XStream xstream)
     {
-        ChanteySongs.Data.Collection c = new ChanteySongs.Data.Collection();
+        SongCollection c = new SongCollection();
         c.read(new Scanner(System.in), new PrintWriter(System.out, true));
         c.computeID();
         

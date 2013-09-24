@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="chantey.xsl"?>
+<!DOCTYPE chantey SYSTEM "chantey.dtd">
+<chantey>
+    <title>Knock a Man Down</title>
+    <collection>1883BNAVWMA</collection>
+    <location>6</location>
+    <author>
+        <personid>Trad</personid>
+    </author>
+    <use>
+        <usetype>long haul</usetype>
+    </use>
+    <ID>R002624</ID>
+
+<text>
+I wish I was in Mobile bay,
+    _Way, hey,_ knock a man down,
+A rolling  cotton night and day,
+    _This_ is the time to knock a man down.
+
+I wish I was in New Orleans,
+    Chorus.
+Where Jackson Gave the British beans,
+    Chorus.
+
+I wish I was at Boston city,
+    Chorus.
+a walking with my lovely Kitty,
+    Chorus.
+
+I wish I was in New York Town,
+    Chorus.
+a walking Broadway up and down,
+    Chorus.
+
+I wish I was in Liverpool,
+    Chorus.
+a going to a Yankee school,
+    Chorus.
+</text>
+
+<abc>
+X: 2624
+T: Knock a Man Down
+C: Trad.
+M: 3/8
+L: 1/8
+K: C
+E | G2 E | G2 E | G2 E | HC2 z | G3 | A3 | F >E F | D2 E|
+w: I wish I was in Mo-bile bay, Way, hey, knock a man down, A
+F2 F | F2 E | D2 A | A2 z | G G G | G2 F | E >D E | C2 z |]
+w: roll-ing  cot-ton night and day, This is the time to knock a man down.
+</abc>
+
+</chantey>
+

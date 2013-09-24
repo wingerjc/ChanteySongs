@@ -1,6 +1,7 @@
-<!ELEMENT chantey (title,collection?,author,perfomer?,use?,ID,crossref?,text?,abc?)>
+<!ELEMENT chantey (title,collection,location,author,perfomer?,use?,ID,crossref?,text?,abc?)>
 <!ELEMENT title (CDATA) >
 <!ELEMENT collection (CDATA) >
+<!ELEMENT location (CDATA) >
 <!ELEMENT author (personid+) >
 <!ELEMENT performer (personid) >
 <!ELEMENT use (usetype+) >

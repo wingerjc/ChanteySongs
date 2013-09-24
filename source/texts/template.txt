@@ -4,6 +4,7 @@
 <chantey>
     <title></title>
     <collection></collection>
+    <location></location>
     <author>
         <personid></personid>
     </author>
@@ -14,9 +15,6 @@
         <usetype></usetype>
     </use>
     <ID></ID>
-    <crossref>
-        <ID></ID>
-    </crossref>
 
 <text>
 </text>

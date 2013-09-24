@@ -4,7 +4,7 @@ import java.io.*;
 import java.util.*;
 import java.text.*;
 
-public class Collection implements Serializable, CLIInput
+public class SongCollection implements Serializable, CLIInput
 {
     private String ID;
     
