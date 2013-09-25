@@ -43,4 +43,9 @@ public class Song implements Serializable, CLIInput
         ID += collection + ".";
         ID += collectionLocation;
     }
+    
+    public String getID()
+    {
+        return ID;
+    }
 }

@@ -20,6 +20,8 @@ public class MainCLI
     private static Configuration config;
     private static final String CONFIG_NAME = "MainCLI.cfg";
     
+    private static String CONSOLE_STRING = "=>";
+    
     private static XStream xstream;
     
     
@@ -43,7 +45,127 @@ public class MainCLI
         // TODO load configDir from command line args
         loadConfig("");
         
+        loadAllData();
+        
+        REPL(new Scanner(System.in), new PrintWriter(System.out));
+        
+        saveAllData();
+    }
+    
+    private static void REPL(Scanner in, PrintWriter out)
+    {
+        String choice = "";
+        
+        while(!choice.equalsIgnoreCase("quit") 
+            && !choice.equalsIgnoreCase("exit"))
+        {
+            // print console
+            printConsole(out);
+            
+            // read choice
+            choice = in.nextLine();
+            
+            // do something based on choice
+            
+        }
+    }
+    
+    private static void printConsole(PrintWriter out)
+    {
+        out.print(CONSOLE_STRING);
+        out.flush();
+    }
+    
+    /* ------------------------------------------------------- */
+    /* -------------------- SEARCH --------------------------- */
+    /* ------------------------------------------------------- */
+    
+    public static void findIndexByTitle(Scanner in, PrintWriter out)
+    { }
+    
+    public static void findSongByTitle(Scanner in, PrintWriter out)
+    { }
+    
+    public static void findCollectionByTitle(Scanner in, PrintWriter out)
+    { }
+    
+    public static void findPerson(Scanner in, PrintWriter out)
+    { }
+    
+    /* ------------------------------------------------------- */
+    /* -------------------- ADD OBJECT ----------------------- */
+    /* ------------------------------------------------------- */
+    
+    public static void addPerson(Scanner in, PrintWriter out)
+    { }
+    
+    public static void addIndex(Scanner in, PrintWriter out)
+    { }
+    
+    public static void addCollection(Scanner in, PrintWriter out)
+    { }
+    
+    public static void addSong(Scanner in, PrintWriter out)
+    { }
+    
+    /* ------------------------------------------------------- */
+    /* -------------------- LOAD DATA ------------------------ */
+    /* ------------------------------------------------------- */
+    
+    private static void loadAllData()
+    {
         loadPeople();
+        loadIndices();
+        loadCollections();
+        loadSongs();
+    }
+    
+    private static void loadPeople()
+    {
+        people = new HashSet<Person>();
+        File personDir = new File(config.PersonDir);
+        
+        for(File f : personDir.listFiles(xmlFileFilter))
+        {
+            people.add((Person)loadObjectFile(f.getAbsolutePath(),
+                "Could not open person file " + f.getAbsolutePath() +":"));
+        }
+    }
+    
+    private static void loadIndices()
+    {
+        indices = new HashSet<Index>();
+        File indexDir = new File(config.IndexDir);
+        
+        for(File f : indexDir.listFiles(xmlFileFilter))
+        {
+            indices.add((Index)loadObjectFile(f.getAbsolutePath(),
+                "Could not open index file " + f.getAbsolutePath() +":"));
+        }
+    }
+    
+    private static void loadCollections()
+    {
+        collections = new HashSet<SongCollection>();
+        File collectionDir = new File(config.CollectionDir);
+        
+        for(File f : collectionDir.listFiles(xmlFileFilter))
+        {
+            collections.add((SongCollection)loadObjectFile(f.getAbsolutePath(),
+                "Could not open collection file " + f.getAbsolutePath() +":"));
+        }
+    }
+    
+    private static void loadSongs()
+    {
+        songs = new HashSet<Song>();
+        File songDir = new File(config.SongDir);
+        
+        for(File f : songDir.listFiles(xmlFileFilter))
+        {
+            songs.add((Song)loadObjectFile(f.getAbsolutePath(),
+                "Could not open song file " + f.getAbsolutePath() +":"));
+        }
     }
     
     public static void loadConfig(String configDir)
@@ -65,16 +187,16 @@ public class MainCLI
             configDir + CONFIG_NAME + ":");
     }
     
-    private static void loadPeople()
+    /* ------------------------------------------------------- */
+    /* -------------------- SAVE DATA ------------------------ */
+    /* ------------------------------------------------------- */
+    
+    private static void saveAllData()
     {
-        people = new HashSet<Person>();
-        File personDir = new File(config.PersonDir);
-        
-        for(File f : personDir.listFiles(xmlFileFilter))
-        {
-            people.add((Person)loadObjectFile(f.getAbsolutePath(),
-                "Could not open person file " + f.getAbsolutePath() +":"));
-        }
+        savePeople();
+        saveIndices();
+        saveCollections();
+        saveSongs();
     }
     
     private static void savePeople()
@@ -87,6 +209,43 @@ public class MainCLI
                 "Could not save person " + p.getID() + ":");
         }
     }
+    
+    private static void saveIndices()
+    {
+        File indexDir = new File(config.IndexDir);
+        
+        for(Index i : indices)
+        {
+            saveObjectFile(indexDir.getAbsolutePath() + i.getID(), i,
+                "Could not save index " + i.getID() + ":");
+        }
+    }
+    
+    private static void saveCollections()
+    {
+        File collectionDir = new File(config.CollectionDir);
+        
+        for(SongCollection c : collections)
+        {
+            saveObjectFile(collectionDir.getAbsolutePath() + c.getID(), c,
+                "Could not save collection " + c.getID() + ":");
+        }
+    }
+    
+    private static void saveSongs()
+    {
+        File songDir = new File(config.SongDir);
+        
+        for(Song s : songs)
+        {
+            saveObjectFile(songDir.getAbsolutePath() + s.getID(), s,
+                "Could not save song " + s.getID() + ":");
+        }
+    }
+    
+    /* ------------------------------------------------------- */
+    /* ------------------- FILE MANAGEMENT ------------------- */
+    /* ------------------------------------------------------- */
     
     private static void saveObjectFile(String fileName, Object o, String error)
     {

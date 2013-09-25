@@ -118,6 +118,10 @@ public class SongCollection implements Serializable, CLIInput
         return "";
     }
     
+    public String getID()
+    {
+        return ID;
+    }
 // -------------- MUTATORS ---------------------
 
     public void setAuthors(Set<String> auth)
