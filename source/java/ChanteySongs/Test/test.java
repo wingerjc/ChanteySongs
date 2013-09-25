@@ -13,7 +13,7 @@ public class test
     public static void main(String[] args) throws IOException
     {
         XStream xstream = new XStream(new DomDriver());
-        xstream.alias("Person",Person.class);
+        DataUtil.prepare(xstream);
         
         //testPerson(xstream);
         //testIndex(xstream);
@@ -48,7 +48,7 @@ public class test
         c.read(new Scanner(System.in), new PrintWriter(System.out, true));
         c.computeID();
         
-        System.out.println(xstream.toXML(c));
+        System.out.println(xstream.toXML((Object)c));
         
         System.out.println("\n" + c);
     }

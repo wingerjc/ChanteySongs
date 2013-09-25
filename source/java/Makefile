@@ -13,3 +13,7 @@ test: all
 
 runtest: test
 	java -cp .;./external/xstream-1.4.4.jar ChanteySongs/Test/test
+
+runCLI: all
+	java -cp .;./external/xstream-1.4.4.jar ChanteySongs/CLI/MainCLI
+
