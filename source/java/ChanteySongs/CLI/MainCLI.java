@@ -66,7 +66,54 @@ public class MainCLI
             choice = in.nextLine();
             
             // do something based on choice
+            choice = choice.toLowerCase();
             
+            if(choice.equals("refresh") || choice.equals("r"))
+            {
+                loadAllData();
+                out.println("Data refreshed from file system.");
+                out.flush();
+            }
+            
+            if(choice.equals("add person") || choice.equals("ap"))
+            {
+                addPerson(in,out);
+            }
+            
+            if(choice.equals("add index") || choice.equals("ai"))
+            {
+                addIndex(in,out);
+            }
+            
+            if(choice.equals("add collection") || choice.equals("ac"))
+            {
+                addCollection(in,out);
+            }
+            
+            if(choice.equals("add song") || choice.equals("as"))
+            {
+                addSong(in,out);
+            }
+            
+            if(choice.equals("search index") || choice.equals("si"))
+            {
+                findIndexByTitle(in,out);
+            }
+            
+            if(choice.equals("search song") || choice.equals("ss"))
+            {
+                findSongByTitle(in,out);
+            }
+            
+            if(choice.equals("search collection") || choice.equals("sc"))
+            {
+                findCollectionByTitle(in,out);
+            }
+            
+            if(choice.equals("search person") || choice.equals("sp"))
+            {
+                findPerson(in,out);
+            }
         }
     }
     
@@ -81,32 +128,56 @@ public class MainCLI
     /* ------------------------------------------------------- */
     
     public static void findIndexByTitle(Scanner in, PrintWriter out)
-    { }
+    {
+        out.println("write findIndexbytitle");
+        out.flush();
+    }
     
     public static void findSongByTitle(Scanner in, PrintWriter out)
-    { }
+    {
+        out.println("write findsongbytitle");
+        out.flush();
+    }
     
     public static void findCollectionByTitle(Scanner in, PrintWriter out)
-    { }
+    {
+        out.println("write findcollectionbytitle");
+        out.flush();
+    }
     
     public static void findPerson(Scanner in, PrintWriter out)
-    { }
+    {
+        out.println("write findperson");
+        out.flush();
+    }
     
     /* ------------------------------------------------------- */
     /* -------------------- ADD OBJECT ----------------------- */
     /* ------------------------------------------------------- */
     
     public static void addPerson(Scanner in, PrintWriter out)
-    { }
+    {
+        out.println("write addperson");
+        out.flush();
+    }
     
     public static void addIndex(Scanner in, PrintWriter out)
-    { }
+    {
+        out.println("write addindex");
+        out.flush();
+    }
     
     public static void addCollection(Scanner in, PrintWriter out)
-    { }
+    {
+        out.println("write addcollection");
+        out.flush();
+    }
     
     public static void addSong(Scanner in, PrintWriter out)
-    { }
+    {
+        out.println("write addsong");
+        out.flush();
+    }
     
     /* ------------------------------------------------------- */
     /* -------------------- LOAD DATA ------------------------ */
