@@ -2,6 +2,7 @@ package ChanteySongs.Data;
 
 import java.io.*;
 import java.util.*;
+import java.text.*;
 
 
 public class Person implements Serializable, CLIInput
@@ -45,6 +46,31 @@ public class Person implements Serializable, CLIInput
         born = DataUtil.getDataDate(in,out,"Date of birth");
         
         died = DataUtil.getDataDate(in,out,"Date of death");
+        
+        computeID();
+    }
+    
+    private void computeID()
+    {
+        if(lastName != null)
+            ID = lastName;
+        else
+            ID = "FFFF";
+        
+        if(firstName != null)
+            ID += firstName;
+        else
+            ID += "LLLL";
+        
+        if(middleName != null)
+            ID += middleName.charAt(0);
+        else
+            ID += "_";
+        
+        if(born != null)
+            ID += (new SimpleDateFormat("yyyy")).format(born);
+        else
+            ID += "0000";
     }
     
 // ------------------- ACCESSORS -------------------------

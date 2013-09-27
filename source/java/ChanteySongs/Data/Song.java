@@ -34,7 +34,32 @@ public class Song implements Serializable, CLIInput
     
     public void read(Scanner in, PrintWriter out)
     {
+        title = DataUtil.getData(in,out,"Title");
         
+        indexID  = DataUtil.getData(in,out,"Index");
+        
+        collection = DataUtil.getData(in,out,"Collection");
+        
+        collectionLocation = DataUtil.getDataInt(in,out,"Page/Time");
+        
+        lyrics = DataUtil.getDataMultiLine(in,out,"Lyrics");
+        
+        abc = DataUtil.getDataMultiLine(in,out,"ABC");
+        
+        collectionGeographicLocation =
+            DataUtil.getData(in,out,"Collection Location");
+        
+        lyricists = DataUtil.getDataSet(in,out,"Lyricist");
+        
+        composers = DataUtil.getDataSet(in,out,"Composer");
+        
+        arrangers = DataUtil.getDataSet(in,out,"Arranger");
+        
+        performers = DataUtil.getDataSet(in,out,"Performer");
+        
+        collectors = DataUtil.getDataSet(in,out,"Collector");
+        
+        computeID();
     }
     
     public void computeID()
@@ -45,7 +70,14 @@ public class Song implements Serializable, CLIInput
     }
     
     public String getID()
-    {
-        return ID;
-    }
+    { return ID; }
+    
+    public String getTitle()
+    { return title; }
+    
+    public String getCollection()
+    { return collection; }
+    
+    public String getIndexID()
+    { return indexID; }
 }

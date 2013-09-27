@@ -17,7 +17,8 @@ public class test
         
         //testPerson(xstream);
         //testIndex(xstream);
-        testCollection(xstream);
+        //testCollection(xstream);
+        testSong(xstream);
     }
     
     public static void testPerson(XStream xstream)
@@ -25,7 +26,6 @@ public class test
         Person p = new Person();
         
         p.read(new Scanner(System.in), new PrintWriter(System.out, true));
-        p.setID("1024");
         
         System.out.println(xstream.toXML(p));
         
@@ -46,10 +46,19 @@ public class test
     {
         SongCollection c = new SongCollection();
         c.read(new Scanner(System.in), new PrintWriter(System.out, true));
-        c.computeID();
         
         System.out.println(xstream.toXML((Object)c));
         
         System.out.println("\n" + c);
+    }
+    
+    public static void testSong(XStream xstream)
+    {
+        Song s = new Song();
+        s.read(new Scanner(System.in), new PrintWriter(System.out, true));
+        
+        System.out.println(xstream.toXML((Object)s));
+        
+        System.out.println("\n" + s);
     }
 }

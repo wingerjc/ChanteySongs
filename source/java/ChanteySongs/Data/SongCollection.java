@@ -49,6 +49,8 @@ public class SongCollection implements Serializable, CLIInput
                !type.equalsIgnoreCase("v") // video recording
                ));
         
+        type = type.toUpperCase();
+        
         url = DataUtil.getData(in,out,"URL");
         
         publisher = DataUtil.getData(in,out,"Publisher");
@@ -60,6 +62,12 @@ public class SongCollection implements Serializable, CLIInput
         edition = DataUtil.getDataInt(in,out,"Edition");
         
         length = DataUtil.getDataInt(in,out,"Length");
+        
+        authors = DataUtil.getDataSet(in,out,"Author");
+        
+        editors = DataUtil.getDataSet(in,out,"Editor");
+        
+        computeID();
     }
     
     public void computeID()

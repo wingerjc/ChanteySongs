@@ -57,7 +57,8 @@ public class MainCLI
         String choice = "";
         
         while(!choice.equalsIgnoreCase("quit") 
-            && !choice.equalsIgnoreCase("exit"))
+            && !choice.equalsIgnoreCase("exit")
+            && !choice.equalsIgnoreCase("q"))
         {
             // print console
             printConsole(out);
@@ -157,26 +158,50 @@ public class MainCLI
     
     public static void addPerson(Scanner in, PrintWriter out)
     {
-        out.println("write addperson");
-        out.flush();
+        Person p = new Person();
+        
+        p.read(in,out);
+        
+        people.add(p);
+        
+        saveObjectFile(config.PersonDir + p.getID(), p,
+            "Could not save person " + p.getID() + ":");
     }
     
     public static void addIndex(Scanner in, PrintWriter out)
     {
-        out.println("write addindex");
-        out.flush();
+        Index i = new Index();
+        
+        i.read(in,out);
+        
+        indices.add(i);
+        
+        saveObjectFile(config.IndexDir + i.getID(), i,
+            "Could not save index " + i.getID() + ":");
     }
     
     public static void addCollection(Scanner in, PrintWriter out)
     {
-        out.println("write addcollection");
-        out.flush();
+        SongCollection c = new SongCollection();
+        
+        c.read(in,out);
+        
+        collections.add(c);
+        
+        saveObjectFile(config.CollectionDir + c.getID(), c,
+            "Could not save collection " + c.getID() + ":");
     }
     
     public static void addSong(Scanner in, PrintWriter out)
     {
-        out.println("write addsong");
-        out.flush();
+        Song s = new Song();
+        
+        s.read(in,out);
+        
+        songs.add(s);
+        
+        saveObjectFile(config.SongDir + s.getID(), s,
+            "Could not save song " + s.getID() + ":");
     }
     
     /* ------------------------------------------------------- */

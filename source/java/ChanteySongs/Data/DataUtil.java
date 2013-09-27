@@ -19,6 +19,21 @@ public class DataUtil
         return (tmp.length() == 0) ? null : tmp;
     }
     
+    public static String getDataMultiLine(Scanner in, PrintWriter out, String name)
+    {
+        String tmp = "";
+        String ret = "";
+        out.print(name + ": ");
+        out.flush();
+        
+        while(!tmp.equalsIgnoreCase("end"))
+        {
+            ret += tmp + "\n";
+            tmp = in.nextLine();
+        }
+        return (ret.replaceAll("\\s","").length() == 0) ? null : ret;
+    }
+    
     public static int getDataInt(Scanner in, PrintWriter out, String name)
     {
         String tmp;
