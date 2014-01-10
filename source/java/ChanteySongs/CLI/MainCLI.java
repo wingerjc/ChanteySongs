@@ -136,7 +136,42 @@ public class MainCLI
     
     public static void findSongByTitle(Scanner in, PrintWriter out)
     {
-        out.println("write findsongbytitle");
+        out.print("Enter Song Search terms: ");
+        out.flush();
+        String termString = in.nextLine();
+        String[] terms = termString.split("\\s+");
+        
+        ArrayList<SearchResults> results = new ArrayList<SearchResults>();
+        
+        for(Song s : songs)
+        {
+            boolean include = false;
+            
+            for(String term : terms)
+            {
+                if(s.getTitle().indexOf(term) > 0)
+                {
+                    include = true;
+                    break;
+                }
+            }
+            
+            if(include)
+            {
+                results.add(new SearchResults(
+                    s.getTitle() + " | " + s.getIndexID() + " | " + s.getCollection(),
+                    terms,
+                    s.getTitle()
+                    ));
+            }
+        }
+        
+        Collections.sort(results);
+        
+        for(SearchResults res : results)
+        {
+            out.println(res);
+        }
         out.flush();
     }
     
@@ -152,6 +187,29 @@ public class MainCLI
         out.flush();
     }
     
+    private static class SearchResults implements Comparable<SearchResults>
+    {
+        public String data;
+        public double match;
+        
+        public SearchResults(
+            String displayData,
+            String[] toMatch,
+            String matchField)
+        {
+            data = displayData;
+            match = 0;
+        }
+        
+        public String toString()
+        { return data; }
+        
+        public int compareTo(SearchResults other)
+        {
+            return (int)(1000*(match-other.match));
+        }
+    }
+    
     /* ------------------------------------------------------- */
     /* -------------------- ADD OBJECT ----------------------- */
     /* ------------------------------------------------------- */
@@ -164,7 +222,7 @@ public class MainCLI
         
         people.add(p);
         
-        saveObjectFile(config.PersonDir + p.getID(), p,
+        saveObjectFile(config.PersonDir + "/" + p.getID() + ".xml", p,
             "Could not save person " + p.getID() + ":");
     }
     
@@ -176,7 +234,7 @@ public class MainCLI
         
         indices.add(i);
         
-        saveObjectFile(config.IndexDir + i.getID(), i,
+        saveObjectFile(config.IndexDir + "/" + i.getID() + ".xml", i,
             "Could not save index " + i.getID() + ":");
     }
     
@@ -188,7 +246,7 @@ public class MainCLI
         
         collections.add(c);
         
-        saveObjectFile(config.CollectionDir + c.getID(), c,
+        saveObjectFile(config.CollectionDir + "/" + c.getID() + ".xml", c,
             "Could not save collection " + c.getID() + ":");
     }
     
@@ -200,7 +258,7 @@ public class MainCLI
         
         songs.add(s);
         
-        saveObjectFile(config.SongDir + s.getID(), s,
+        saveObjectFile(config.SongDir + "/" + s.getID() + ".xml", s,
             "Could not save song " + s.getID() + ":");
     }
     
@@ -301,7 +359,7 @@ public class MainCLI
         
         for(Person p : people)
         {
-            saveObjectFile(personDir.getAbsolutePath() + p.getID(), p,
+            saveObjectFile(personDir.getAbsolutePath() + "/" + p.getID() + ".xml", p,
                 "Could not save person " + p.getID() + ":");
         }
     }
@@ -312,7 +370,7 @@ public class MainCLI
         
         for(Index i : indices)
         {
-            saveObjectFile(indexDir.getAbsolutePath() + i.getID(), i,
+            saveObjectFile(indexDir.getAbsolutePath() + "/" + i.getID() + ".xml", i,
                 "Could not save index " + i.getID() + ":");
         }
     }
@@ -323,7 +381,7 @@ public class MainCLI
         
         for(SongCollection c : collections)
         {
-            saveObjectFile(collectionDir.getAbsolutePath() + c.getID(), c,
+            saveObjectFile(collectionDir.getAbsolutePath() + "/" + c.getID() + ".xml", c,
                 "Could not save collection " + c.getID() + ":");
         }
     }
@@ -334,7 +392,7 @@ public class MainCLI
         
         for(Song s : songs)
         {
-            saveObjectFile(songDir.getAbsolutePath() + s.getID(), s,
+            saveObjectFile(songDir.getAbsolutePath() + "/" + s.getID() + ".xml", s,
                 "Could not save song " + s.getID() + ":");
         }
     }
@@ -354,7 +412,7 @@ public class MainCLI
             System.err.println(error);
             System.exit(1);
         }
-        out.println(xstream.toXML(config));
+        out.println(xstream.toXML(o));
         out.close();
     }
     

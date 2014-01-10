@@ -74,8 +74,8 @@ public class SongCollection implements Serializable, CLIInput
     {
         String repl = "[^A-Za-z0-9]+";
         
-        String s = title.substring(0,Math.min(title.length(),5));
-        s = s.toUpperCase().replaceAll(repl,"");
+        String s = title.toUpperCase().replaceAll(repl,"");
+        s = s.substring(0,Math.min(title.length(),5));
         while(s.length() < 5)
             s += "Z";
         ID = s;
@@ -89,7 +89,7 @@ public class SongCollection implements Serializable, CLIInput
             s = tmp.get(0).toUpperCase().replaceAll(repl,"");
             while(s.length() < 5)
                 s = "0" + s;
-            ID += s.substring(s.length()-5,s.length());
+            ID += s.substring(0,5);
         }else if(editors != null)
         {
             ArrayList<String> tmp = new ArrayList<String>();
@@ -99,7 +99,7 @@ public class SongCollection implements Serializable, CLIInput
             s = tmp.get(0).toUpperCase().replaceAll(repl,"");
             while(s.length() < 5)
                 s = "0" + s;
-            ID += s.substring(s.length()-5,s.length());
+            ID += s.substring(0,5);
         }else if(publisher != null)
         {
             ID += publisher.substring(0,5).toUpperCase().replaceAll(repl,"");

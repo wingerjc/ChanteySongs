@@ -82,7 +82,7 @@ public class DataUtil
             }
         }while(tmp != null);
         
-        return ret;
+        return (ret.size() == 0)? null : ret;
     }
     
     public static void prepare(XStream xstream)
