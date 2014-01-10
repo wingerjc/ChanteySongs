@@ -3,17 +3,17 @@
 all: Data CLI
 
 Data:
-	javac -cp .;./external/xstream-1.4.4.jar ChanteySongs/Data/*.java
+	javac -cp ".:lib/xstream-1.4.4.jar" ChanteySongs/Data/*.java
 
 CLI:
-	javac -cp .;./external/xstream-1.4.4.jar ChanteySongs/CLI/*.java
+	javac -cp ".:./lib/xstream-1.4.4.jar" ChanteySongs/CLI/*.java
 
 test: all
-	javac -cp .;./external/xstream-1.4.4.jar ChanteySongs/Test/*.java
+	javac -cp ".:./lib/xstream-1.4.4.jar" ChanteySongs/Test/*.java
 
 runtest: test
-	java -cp .;./external/xstream-1.4.4.jar ChanteySongs/Test/test
+	java -cp ".:./lib/xstream-1.4.4.jar" ChanteySongs/Test/test
 
 runCLI: all
-	java -cp .;./external/xstream-1.4.4.jar ChanteySongs/CLI/MainCLI
+	java -cp ".:./lib/xstream-1.4.4.jar" ChanteySongs/CLI/MainCLI
 
