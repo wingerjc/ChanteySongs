@@ -1,5 +1,5 @@
 
--- al available titles for a person
+-- all available titles for a person
 create table PersonTitle
 (
 	Title varchar(10) primary key
@@ -165,4 +165,55 @@ create table if not exists SongCollectionEditor
 	constraint PK_SongCollectionEditor primary key (EditorID, CollectionID)
 );
 
--- TODO make song table(s)
+-- Represents a single song that is recorded in a collection
+create table if not exists Song
+(
+	ID varchar(100) primary key,
+	Title varchar(500) not null,
+	IndexID varchar(100) not null references SongIndex(ID),
+	CollectionID varchar(100) not null references SongCollection(ID),
+	CollectionLocation int,
+	CollectionGeographicLocation varchar(500),
+	Lyrics text,
+	abc text
+);
+
+-- all documented composers of a song
+create table if not exists SongComposer
+(
+	SongID not null references Song(ID),
+	PersonID not null references Person(ID),
+	constraint PK_SongComposer primary key (SongID, PersonID)
+);
+
+-- all documented lyricists of a song
+create table if not exists SongLyricist
+(
+	SongID not null references Song(ID),
+	PersonID not null references Person(ID),
+	constraint PK_SongLyricist primary key (SongID, PersonID)
+);
+
+-- all documented arrangers of a song
+create table if not exists SongArranger
+(
+	SongID not null references Song(ID),
+	PersonID not null references Person(ID),
+	constraint PK_SongArranger primary key (SongID, PersonID)
+);
+
+-- all documented performers of a song
+create table if not exists SongPerformer
+(
+	SongID not null references Song(ID),
+	PersonID not null references Person(ID),
+	constraint PK_SongPerformer primary key (SongID, PersonID)
+);
+
+-- all documented collectors of a song
+create table if not exists SongCollector
+(
+	SongID not null references Song(ID),
+	PersonID not null references Person(ID),
+	constraint PK_SongCollector primary key (SongID, PersonID)
+);
