@@ -140,7 +140,7 @@ create table if not exists SongCollection
 	PublisherLocation varchar(100),
 	Published Date,
 	Edition int,
-	CollectionLength int,
+	CollectionLength int not null,
 	URL varchar(500),
 	ID varchar(100) primary key,
 	constraint FK_SongCollection_MediaType foreign key (MediaType)
@@ -172,7 +172,7 @@ create table if not exists Song
 	Title varchar(500) not null,
 	IndexID varchar(100) not null references SongIndex(ID),
 	CollectionID varchar(100) not null references SongCollection(ID),
-	CollectionLocation int,
+	CollectionLocation int not null,
 	CollectionGeographicLocation varchar(500),
 	Lyrics text,
 	abc text
